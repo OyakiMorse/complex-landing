@@ -372,24 +372,43 @@ button, .menu, .search {
   font-weight: 600;
 }
 
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.activeTab[data-tab-target] {
+  color: #222222;
+  font-weight: 500;
+  border-bottom: 1px solid #222222;
+}
+
 .works {
-  margin-top: 200px;
+  margin: 200px 0;
 }
 
 .work_tabs {
-  margin-left: 60px;
+  margin-left: 50px;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
   font-size: 14px;
   margin-top: 70px;
 }
 
-.work_tabs_item a {
-  text-decoration: none;
+.work_tabs_item {
+  text-transform: uppercase;
   color: #8d8d8d;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
-.work_tabs .active a {
+.work_tabs_item:hover {
+  border-bottom: 1px solid #8d8d8d;
+  cursor: pointer;
   color: #292626;
 }
 

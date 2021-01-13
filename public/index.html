@@ -229,33 +229,53 @@
           <div class="col-md-6">
             <div class="section_title">
               <p class="section_title_label">— Our works</p>
-
               <h2 class="section_title_head">Discover our works</h2>
             </div>
           </div>
+
           <div class="col-md-6">
             <ul class="work_tabs d-flex justify-content-between">
-              <li class="work_tabs_item active">
-                <a href="#">All</a>
+              <li data-tab-target="#all" class="work_tabs_item activeTab">
+                All
               </li>
-              <li class="work_tabs_item">
-                <a href="#">Branding</a>
+
+              <li data-tab-target="#branding" class="work_tabs_item">
+                Branding
               </li>
-              <li class="work_tabs_item">
-                <a href="#">Web</a>
+
+              <li data-tab-target="#web" class="work_tabs_item">Web</li>
+
+              <li data-tab-target="#development" class="work_tabs_item">
+                Development
               </li>
-              <li class="work_tabs_item">
-                <a href="#">Development</a>
-              </li>
-              <li class="work_tabs_item">
-                <a href="#">Films</a>
-              </li>
+
+              <li data-tab-target="#films" class="work_tabs_item">Films</li>
             </ul>
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <div class="works_wrap d-flex justify-content-between">
+            <div
+              id="all"
+              class="works_wrap justify-content-between active"
+              data-tab-content
+            >
+              <a href="#" class="works_wrap_item">
+                <img src="./img/item.png" alt="gallery"
+              /></a>
+              <a href="#" class="works_wrap_item">
+                <img src="./img/bg1.jpg " alt="gallery"
+              /></a>
+              <a href="#" class="works_wrap_item">
+                <img src="./img/bg1.jpg " alt="gallery"
+              /></a>
+            </div>
+
+            <div
+              id="branding"
+              class="works_wrap justify-content-between"
+              data-tab-content
+            >
               <a href="#" class="works_wrap_item">
                 <img src="./img/item.png" alt="gallery"
               /></a>
@@ -265,14 +285,53 @@
               <a href="#" class="works_wrap_item">
                 <img src="./img/bg1.jpg " alt="gallery"
               /></a>
+            </div>
+
+            <div
+              id="web"
+              class="works_wrap justify-content-between"
+              data-tab-content
+            >
               <a href="#" class="works_wrap_item">
-                <img src="./img/item.png " alt="gallery"
+                <img src="./img/m1.jpg" alt="gallery"
               /></a>
               <a href="#" class="works_wrap_item">
-                <img src="./img/offer1.png " alt="gallery"
+                <img src="./img/madara.jpg" alt="gallery"
               /></a>
               <a href="#" class="works_wrap_item">
-                <img src="./img/item2.jpg" alt="gallery"
+                <img src="./img/bg1.jpg " alt="gallery"
+              /></a>
+            </div>
+
+            <div
+              id="development"
+              class="works_wrap justify-content-between"
+              data-tab-content
+            >
+              <a href="#" class="works_wrap_item">
+                <img src="./img/m1.jpg" alt="gallery"
+              /></a>
+              <a href="#" class="works_wrap_item">
+                <img src="./img/madara.jpg" alt="gallery"
+              /></a>
+              <a href="#" class="works_wrap_item">
+                <img src="./img/offer1.png" alt="gallery"
+              /></a>
+            </div>
+
+            <div
+              id="films"
+              class="works_wrap justify-content-between"
+              data-tab-content
+            >
+              <a href="#" class="works_wrap_item">
+                <img src="./img/nar.png" alt="gallery"
+              /></a>
+              <a href="#" class="works_wrap_item">
+                <img src="./img/madara.jpg" alt="gallery"
+              /></a>
+              <a href="#" class="works_wrap_item">
+                <img src="./img/bg1.jpg " alt="gallery"
               /></a>
             </div>
           </div>
@@ -281,6 +340,7 @@
     </section>
 
     <section></section>
+    <script src="./js/switchTabs.js"></script>
     <script src="./js/carousel.js"></script>
   </body>
 </html>

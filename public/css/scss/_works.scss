@@ -1,21 +1,35 @@
+[data-tab-content] {
+  display: none;
+}
+.active[data-tab-content] {
+  display: flex;
+}
+.activeTab[data-tab-target] {
+  color: $txtClr;
+  font-weight: 500;
+  border-bottom: 1px solid $txtClr;
+}
+
 .works {
-  margin-top: 200px;
+  margin: 200px 0;
 }
 
 .work_tabs {
-  margin-left: 60px;
+  margin-left: 50px;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
   font-size: 14px;
   margin-top: 70px;
+
   &_item {
-    & a {
-      text-decoration: none;
-      color: #8d8d8d;
+    text-transform: uppercase;
+    color: #8d8d8d;
+    letter-spacing: 2px;
+    text-align: center;
+    &:hover {
+      border-bottom: 1px solid #8d8d8d;
+      cursor: pointer;
+      color: #292626;
     }
-  }
-  & .active a {
-    color: #292626;
   }
 }
 
