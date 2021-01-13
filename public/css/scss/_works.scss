@@ -1,0 +1,55 @@
+.works {
+  margin-top: 200px;
+}
+
+.work_tabs {
+  margin-left: 60px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 14px;
+  margin-top: 70px;
+  &_item {
+    & a {
+      text-decoration: none;
+      color: #8d8d8d;
+    }
+  }
+  & .active a {
+    color: #292626;
+  }
+}
+
+.works_wrap {
+  flex-wrap: wrap;
+  margin-top: 100px;
+  &_item {
+    margin-top: 50px;
+    position: relative;
+    & img {
+      transition: all 0.5s ease;
+      display: block;
+      width: 300px;
+      height: 400px;
+    }
+    &:hover img {
+      box-shadow: -30px 80px 200px rgba(0, 0, 0, 0.2);
+      transform: scale(0.98);
+    }
+
+    &:hover:after {
+      visibility: visible;
+      content: '';
+      display: block;
+      background: url('../img/play3.png') no-repeat;
+      width: 65px;
+      height: 65px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      cursor: pointer;
+      margin-left: -25px;
+      margin-top: -25px;
+      transition: all 0.5s ease;
+    }
+  }
+}

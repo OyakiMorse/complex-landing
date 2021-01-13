@@ -1,0 +1,77 @@
+.carousel {
+  position: relative;
+  height: 500px;
+  width: 80%;
+  margin: 30px auto;
+  &_track {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    transition: transform 450ms ease-in;
+  }
+  &_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &_track_container {
+    background-color: #a8a3a3;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  &_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  &_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    img {
+      width: 20px;
+    }
+    &_left {
+      left: -40px;
+    }
+    &_right {
+      right: -40px;
+    }
+  }
+  &_nav {
+    display: flex;
+    // background: purple;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  &_indicator {
+    border: 0;
+    width: 25px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.75);
+    margin: 0 10px;
+    cursor: pointer;
+    &.current_slide {
+      background: rgba(#4737ff, 0.9);
+    }
+  }
+  &_playBtn {
+    display: block;
+    background: url('../img/play3.png') no-repeat;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+  }
+}
+
+.isHidden {
+  display: none;
+}

@@ -1,0 +1,18 @@
+.header {
+  height: 100vh;
+  &_logo {
+    width: 60px;
+  }
+  &_nav {
+    padding-top: 50px;
+    margin-bottom: 125px;
+  }
+}
+
+.menu {
+  @extend button;
+}
+
+.search {
+  @extend button;
+}

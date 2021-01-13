@@ -1,0 +1,52 @@
+.result {
+  padding-top: 120px;
+}
+.colage {
+  width: 80%;
+  background: url('../img/bg2.jpg') no-repeat left top / 100% 80%;
+  height: 550px;
+  position: absolute;
+  left: 0;
+  & img {
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: 450px;
+    margin-left: 50%;
+    bottom: 0;
+    box-shadow: 30px 80px 130px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.easy {
+  margin-left: 65px;
+  &_title {
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  &_text {
+    margin-bottom: 50px;
+  }
+  &_point {
+    padding-left: 80px;
+    text-transform: uppercase;
+    color: $txtClr;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    padding-bottom: 20px;
+    &_first {
+      background: url('../img/ico.png') no-repeat;
+      background-size: 10%;
+
+      font-weight: 600;
+      margin: 20px 0 0 0;
+    }
+
+    &_second {
+      background: url('../img/ico2.png') no-repeat;
+      background-size: 10%;
+      margin: 20px 0 0 0;
+      font-weight: 600;
+    }
+  }
+}

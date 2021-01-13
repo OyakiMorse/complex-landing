@@ -1,0 +1,87 @@
+$baseFont: 'Fira Sans', sans-serif;
+$headClr: #151515;
+$txtClr: #222222;
+$txtClrLight: #8d8d8d;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $baseFont;
+  padding: 0;
+  margin: 0;
+  color: $txtClrLight;
+  font-size: 18px;
+}
+
+.be_static {
+  position: static;
+}
+
+.vh_dependent {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: 700;
+  color: $headClr;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  display: block;
+  outline: none !important;
+}
+
+.btnBase {
+  background: #4737ff;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 15px 30px;
+  display: inline;
+  border-radius: 0;
+  letter-spacing: 0.3em;
+  text-align: center;
+  transition: all 0.5s ease;
+  &:hover {
+    background: #2a1cc7;
+  }
+  &:active {
+    outline: none;
+  }
+}
+
+@import './scss/header';
+@import './scss/offer';
+@import './scss/problems';
+@import './scss/services';
+@import './scss/carousel';
+@import './scss/result';
+@import './scss/works';
