@@ -87,3 +87,21 @@ button {
 @import './scss/works';
 @import './scss/testimonials';
 @import './scss/clients';
+
+@media screen and (max-width: 765px) {
+  .poster {
+    // width: 50%;
+    // padding-top: 100px;
+    display: none;
+  }
+  .about_title {
+    padding-top: 150px;
+  }
+  .hero {
+    z-index: -1;
+    margin-top: 80px;
+  }
+  // .video {
+  //   bottom: 5%;
+  // }
+}

@@ -99,7 +99,6 @@ button, .menu, .search {
 }
 
 .offer_content_title {
-  font-size: 60px;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.3em;
@@ -494,5 +493,18 @@ button, .menu, .search {
 
 .footer_logo {
   margin: 80px 0;
+}
+
+@media screen and (max-width: 765px) {
+  .poster {
+    display: none;
+  }
+  .about_title {
+    padding-top: 150px;
+  }
+  .hero {
+    z-index: -1;
+    margin-top: 80px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
