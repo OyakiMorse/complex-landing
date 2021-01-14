@@ -1,0 +1,18 @@
+.clients {
+  padding-top: 280px;
+  &_row {
+    margin-top: 120px;
+    &_item img {
+      width: 65px;
+    }
+  }
+}
+.footer {
+  margin-top: 130px;
+  margin-bottom: 0;
+  height: 240px;
+  background-color: #8d8d8d;
+  &_logo {
+    margin: 80px 0;
+  }
+}

@@ -1,0 +1,17 @@
+.partner {
+  &_title {
+    padding-top: 150px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: $txtClr;
+    font-weight: 700;
+  }
+  &_desc {
+    color: $txtClrLight;
+  }
+  &_photo {
+    display: block;
+    max-width: 400px;
+    max-height: 500px;
+  }
+}

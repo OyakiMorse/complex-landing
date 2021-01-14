@@ -454,4 +454,45 @@ button, .menu, .search {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
+.partner_title {
+  padding-top: 150px;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #222222;
+  font-weight: 700;
+}
+
+.partner_desc {
+  color: #8d8d8d;
+}
+
+.partner_photo {
+  display: block;
+  max-width: 400px;
+  max-height: 500px;
+}
+
+.clients {
+  padding-top: 280px;
+}
+
+.clients_row {
+  margin-top: 120px;
+}
+
+.clients_row_item img {
+  width: 65px;
+}
+
+.footer {
+  margin-top: 130px;
+  margin-bottom: 0;
+  height: 240px;
+  background-color: #8d8d8d;
+}
+
+.footer_logo {
+  margin: 80px 0;
+}
 /*# sourceMappingURL=style.css.map */
